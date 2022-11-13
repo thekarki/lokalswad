@@ -27,18 +27,61 @@ nav {
   margin: 0 10px;
   list-style: none;
 }
-.nav-link {
+
+.container{
+  background: rgb(47, 255, 151);
+  width: 100%;
+  height: 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.nav-list{
+  background-color: rgb(240, 251, 255);
+  border-radius: 50px;
+  padding: 10px ;
+  box-shadow: 0 25px 20px -20px rgba(0, 0, 0, 0.4);
+
+}
+.nav-list ul li{
+  list-style: none;
+  display: inline-block;
+  padding: 13px 35px;
+  margin: 10px;
   font-size: 18px;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-weight: bold;
-  padding-bottom: 3px;
-  color: black;
+  font-weight: 500;
+  color:rgb(119, 128, 0);
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+  transition: color 0.5s;
 }
-.nav-link:hover {
-  border-bottom: 2px solid #1c6e15;
+.nav-list ul li::after{
+  content:'' ;
+  background: #f4e845;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  opacity: 0;
+  transition: top 0.5s, opacity 0.5s;
+
 }
-.up-arrow-wrapper {
+.nav-list ul li:hover{
+  color: white;
+
+}
+.nav-list ul li:hover::after{
+  top: 50%;
+  opacity: 1;
+}
+
+ .up-arrow-wrapper {
   width: 90%;
   margin: auto;
   display: flex;
@@ -47,20 +90,20 @@ nav {
 
 .active {
   border-bottom: 3px solid #1c6e15;
-  color: #eb4646;
+  color: #46c5eb;
 }
 .title-1 {
-  font-size: 44px;
+  font-family: cursive;
   text-transform: uppercase;
   margin: 35px auto;
-  font-size: 38px;
+  font-size: 90px;
   font-weight: 900;
 }
-.washera {
-  color: #eb4646;
+.lokal {
+  color: #6f6237;
 }
-.academy {
-  color: #1c6e15;
+.swad {
+  color:#6f6237 ;
 }
 @media (max-width: 480px) {
   header {
