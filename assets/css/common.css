@@ -82,6 +82,7 @@ section article h2 {
 .section-title{
   text-align: center;
   color:#926829;
+  margin-top: 1.5%;
 }
 .list{
   text-align: center;
@@ -154,6 +155,7 @@ form {
 .form-group select {
   padding:10px;
 }
+
 
 @media (max-width: 480px ) {
   main {

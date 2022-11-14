@@ -8,6 +8,7 @@ header {
   top: 0;
   z-index: 100;
   top: 0;
+
 }
 
 nav {
@@ -57,7 +58,7 @@ nav {
   z-index: 2;
   transition: color 0.5s;
 }
-.nav-list ul li::after{
+nav ul li::after{
   content:'' ;
   background: #f4e845;
   width: 100%;
@@ -72,8 +73,9 @@ nav {
   transition: top 0.5s, opacity 0.5s;
 
 }
+
 .nav-list ul li:hover{
-  color: white;
+  color: darkseagreen;
 
 }
 .nav-list ul li:hover::after{
@@ -83,7 +85,7 @@ nav {
 
  .up-arrow-wrapper {
   width: 90%;
-  margin: auto;
+  margin-bottom: 0%;
   display: flex;
   justify-content: flex-end;
 }
